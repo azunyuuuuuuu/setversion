@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Cocona;
+using Spectre.Console;
+
+var app = CoconaLiteApp.Create();
+
+app.AddCommand(() =>
+{
+    AnsiConsole.MarkupLine("[underline green]henlo[/] worl :3");
+});
+
+app.Run();
