@@ -1,11 +1,15 @@
 ﻿using Cocona;
 using Spectre.Console;
 
-var app = CoconaLiteApp.Create();
-
-app.AddCommand(() =>
+await CoconaLiteApp.RunAsync(() =>
 {
-    AnsiConsole.MarkupLine("[underline green]henlo[/] worl :3");
-});
+    // list directories
 
-app.Run();
+    // get current version
+
+    // create list
+
+    // make selection
+
+    // done :3
+});
